@@ -28,8 +28,8 @@ while True:
         nome = values["nome"]
         cognome = values["cognome"]
         marca = values["marca"]
-        console = [c for c in ["Benzina", "Disel", "Elettrico", "Altro"] if values[c.lower()]]
-        carburante = "Si" if values["si"] else "No"
+        carburante = [c for c in ["Benzina", "Disel", "Elettrico", "Altro"] if values[c.lower()]]
+        auto_elettriche = "Si" if values["si"] else "No"
         salva_dati(nome, cognome, marca, carburante, auto_elettriche)
 
 window.close()
